@@ -21,6 +21,11 @@ public class MeasurableTester
       System.out.println("Maximum area: " + maxData);
       System.out.println("Expected: 513120");
       System.out.println("");
+      double minData = Data.min(countries);
+      System.out.println("Minimim area: " + minData);
+      System.out.println("Expected: 30510");
+      System.out.println("");
+      
      
       //Bank Accounts
       System.out.println("Bank account data");
@@ -35,6 +40,11 @@ public class MeasurableTester
       maxData = Data.max(bank);
       System.out.println("Maximum balance: " + maxData);
       System.out.println("Expected: 513120");
+      System.out.println("");
+      minData = Data.min(bank);
+      System.out.println("Minimim area: " + minData);
+      System.out.println("Expected: 30510");
+      System.out.println("");
 
       System.out.println();
       System.out.println("Quiz Data");
@@ -54,5 +64,9 @@ public class MeasurableTester
       maxGrade = (int) Data.max(quiz);
       System.out.println("Maximum grade: " + maxGrade);
       System.out.println("Expected max: 95");
+      System.out.println("");
+      int minGrade = (int) Data.min(quiz);
+      System.out.println("Minimum grade: " + minGrade);
+      System.out.println("Expected: 50");
    }
 }
